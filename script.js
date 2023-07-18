@@ -3,15 +3,11 @@
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
   window.location.href = 'Dashboard.aspx';
-  // Perform your login logic here
-  // For this example, let's just display the username and password in the console
   console.log('Username:', username);
   console.log('Password:', password);
 });
 
 
-
-// Add active class to the clicked menu item
 var menuItems = document.querySelectorAll('.sidebar a');
 menuItems.forEach(function (item) {
     item.addEventListener('click', function () {
@@ -29,7 +25,7 @@ dropdownBtn.addEventListener('click', function () {
     dropdownContent.classList.toggle('show');
 });
 
-// Close the dropdown if the user clicks outside of it
+//this closes the dropdown incase user clicks outside
 window.addEventListener('click', function (event) {
     if (!event.target.matches('.dropbtn')) {
         if (dropdownContent.classList.contains('show')) {
